@@ -1,9 +1,9 @@
 body{
-    background: linear-gradient(red,black)
+    background: linear-gradient(aquamarine,aquamarine)
 }
 header{
     background-color:black !important;
-    border:2px solid blue;
+    border:3px solid whitesmoke;
     border-radius: 20px;
     display: flex;
     flex-direction: row;
@@ -12,8 +12,8 @@ header{
     color: white;
 }
     nav{
-        background-color: blue;
-        border:2px solid green;
+        background-color:black;
+        border:3px solid whitesmoke;
         border-radius: 22px;
     }
 
@@ -27,14 +27,16 @@ header{
         width: 40%;
         border: 1px solid black;
         padding: 10px auto;
-        background: linear-gradient(red,blue);
+        background: linear-gradient(aquamarine,aliceblue);
+        border-radius: 20px;
+        margin: 10px auto;
     }
 form{
-    background: silver;
+    background: rgb(190, 255, 233);
     width: 70%;
     border-radius: 20px;
     margin:10px auto;
-    box-shadow: outset 0 0 10px purple;
+    box-shadow: outset 0 0 10px aliceblue;
 }
 fieldset{
     border-style: none;
@@ -47,9 +49,9 @@ textarea{
     max-height: 100px;
 }
 input:focus , textarea:focus{
-    border-color: rgb(20,0,255);
+    border-color: rgb(0, 255, 221);
     cursor: pointer;
-    box-shadow:inset 0 0 8px rgba(0, 29,255,0.6);
+    box-shadow:inset 0 0 8px rgba(0, 247, 255, 0.6);
     outline:0 none;
 }
 form button{
@@ -58,6 +60,24 @@ form button{
     height: 40px;
     background: radial-gradient(teal,black);
     border:2px solid black;
-    color:white;
+    color:aliceblue;
     border-radius:15px;
+}
+form button:hover{
+    background: aliceblue ;
+    text-decoration: underline;
+    color: black;
+    cursor: pointer;
+}
+form input{
+    height: 20px;
+    box-sizing: border-box;
+    color: black;
+    outline: none;
+    border:1px solid black;
+}
+footer{
+    font-size: 16px;
+    text-align: center;
+    color: darkcyan;
 }
