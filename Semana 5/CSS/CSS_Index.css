@@ -145,7 +145,7 @@ i[class^="fa"]{
     "main main sidebar" 300px
     "main main sidebar" 250px
     "footer footer footer" 150px / 
-    1400px 150px 300px;
+    900px 150px 300px;
 }
 /* Definicion de Contenedor Grid Tablet 2 Columnas */
 @media (max-width:1024px){
