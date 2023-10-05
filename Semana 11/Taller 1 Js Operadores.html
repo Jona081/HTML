@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores JS</title>
+</head>
+<body>
+    <center>
+        <h1>Manejo de Operadores Matematicos</h1>
+        <p>En este ejercio aprenderemos a crear variables con let, para luego aplicar diferentes operaciones logicas y matematicas</p>
+            <script>
+                // Asignacion de variables: Entradas 
+                let num1= 10;
+                let num2= 30;
+                let log1= true;
+                let log2= false;
+                //Proceso
+                let suma=num1+num2; //Suma de numeros
+                let mod= num2%num1; //Modulo o residuo
+                let expo=num1**2; //Exponenete de un numero
+                let inc=++num2; //Incremanta numero
+                let comp1=log1||log2; //Comparacion logica booleana OR
+                let comp2=log1&&log2; //Comparacion logica booleana AND
+                let comp3=(num1=num2); //Comparacion logica con numeros
+                //Salida
+                document.write("************************************************************"+"<br>"); 
+                document.write("<br>"+"<br>"); 
+                document.write("La suma de los numeros es: ")
+                document.write(suma + "<br>");
+                document.write("El módulo los numeros es: ");
+                document.write(mod + "<br>");
+                document.write("El exponente del numero es: ");
+                document.write(expo + "<br>");
+                document.write("El incremento del numero es: ");
+                document.write(inc + "<br>");
+                document.write("El resultado del OR es: ");
+                document.write(comp1 + "<br>");
+                document.write("El resultado de AND es: ");
+                document.write(comp2 + "<br>");
+                document.write("El resultado de la comparacion de los numeros es: ");
+                document.write(comp3 +"<br>");
+                document.write("<br>"+"<br>"); 
+                document.write("************************************************************"+"<br>");
+            </script>
+    </center>
+</body>
+</html>
