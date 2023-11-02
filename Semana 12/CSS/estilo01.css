@@ -1,0 +1,66 @@
+h1
+{
+    text-align:center;
+    color:black;
+    font-size:26px;
+}
+
+body
+{
+    background-color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+table
+{
+   border-color:aquamarine;
+   border-style:solid;
+   margin:auto;
+   width:80%;
+   position:absolute;top:200px;
+}
+
+table caption
+{
+   text-align:center;
+   font-size:25px;
+   border-radius: 10px;
+   border-color:aquamarine;
+   border-style:solid;
+   background-color:aliceblue; 
+
+}
+table th
+{
+    border-color:aquamarine;
+    border-radius: 10px;
+    border-style:solid;
+    background-color:aliceblue; 
+    text-align:left;
+}
+
+table td
+{
+    border-color:aquamarine;
+    border-radius: 10px;
+    border-style:solid;
+    text-align:left;
+}
+
+p
+{
+   font-weight: bolder;
+   font-size:22px;
+}
+
+#bot
+{
+    display:block;
+    width:100px;
+    height:50px;
+    border-radius:15px;
+    background-color:blue;
+    color:white;
+       
+}

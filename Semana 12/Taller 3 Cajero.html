@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cajero</title>
+</head>
+    <style>
+        h1, p{
+            font-size: 26px;
+            color:blueviolet
+        }
+    </style>
+<body>
+    <center>
+        <img src="./IMG/WhatsApp Image 2023-10-12 at 9.18.38 AM.jpeg" alt="" width="100" height="100">
+        <h1>Banco Nubank</h1>
+        <p>Bienvenido señor usuario a su cajero electronico del banco NUBANK</p>
+        <br>
+        <script>
+        // Calcular el saldo disponible de una cuenta de ahorros al hacer retiros de dinero en un cajero electronico
+        //Entrada
+            let sw=0
+            let cuenta=parseInt(prompt("Ingrese numero de cunenta de ahorros usuario:"));
+            let saldo=parseInt(prompt("Ingrese saldo$$ a consignar:"));
+            let valor=parseInt(prompt("Ingrese valor$$ a retirar"));
+
+                if(valor>saldo) {
+                    swal("Estimado usuario ","!Fondos insuficientes..!!","Error");
+                }
+                else{
+                    sw=1; //Var bandera activa 1
+                    var saldof;
+                    saldof=saldo-valor;
+                    swal("Estimado usuario"+"Retire su dinero"+"success");
+                }
+                //vALIDAR LA VAR BANDERA
+                if (sw=0){
+                    document.write("<font color='blue' face='Cominc Sans ms' size='14'> "+" Saldo disponible es...$ "+saldo+"</font>"+"<br>");
+                }
+                else {
+                    document.write("<font color='blue'face='Cominc Sans ms' size='14'> "+"Dinero retirado es...$"+valor+"</font>"+"<br>");
+                    document.write("<font color='blue'face='Cominc Sans ms' size='14'> "+"Saldo disponible es...$"+saldof+"</font>"+"<br>");
+                }
+        </script>
+    </center>
+</body>
+</body>
+</html>

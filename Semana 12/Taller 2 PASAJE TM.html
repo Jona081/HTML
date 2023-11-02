@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pasaje TM</title>
+    <!-- link de sitio sweetalert mensajes más elegantes-->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<body>
+    <center>
+        <img src="./IMG/logo tm.jpeg" alt="" width="200px" height="150px">
+        <h2> Ingreso / Saldo tarjeta trasmilenio </h2>
+        <br>
+        <script>
+            let saldo;
+            const tm=2950; //Valor minimo pasaje TM
+            //Entrada
+            saldo=parseInt(prompt("Ingres saldo de su tarjeta TM"))
+            //Proceso
+            if (saldo>=tm){
+                swal("Estimado usuario","Ingrese al sistema TM","success");
+            }else {
+                swal("Estimado usuario","Saldo insuficiente: Recargue","error");
+            }
+        </script>
+    </center>
+</body>
+</html>
