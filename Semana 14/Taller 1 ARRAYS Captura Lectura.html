@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAPTURA-LECTURA</title>
+</head>
+<body>
+    <center>
+        <h1>CREACION Y LECTURA EF ARRAYS</h1>
+        <h2>CICLO FOR</h2>
+        <h3>A CONTINUACAION DE IMPRIMEN LOS DATOS ALMACENADOS EN ARRAYS</h3>
+        <br>
+        <script>
+            let num;
+            let datos=new Array();
+//CAPTURA ARRAYS 
+            num=parseInt(prompt("INGRESE CANTIDAD DE DATOS A GUARDAR"));// Longitud array
+        for(i=0;i<num;i++){
+            datos[i]=prompt("INGRESE NOMBRES EN ARRAYS");
+        }    
+//LECTURA        
+        for(i=0;i<num;i++){
+            document.write("<br>"+"<br>");
+            document.write("INDICE"+i+"&nbsp;"+datos[i]+"<br>");
+            console.log(datos[i]);
+        }
+        </script>
+        <br>
+        <p>Final del ejercicio No.1</p>
+    </center>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>METODO SPLICE</title>
+    <!-- link de sitio Sweetalert mensajes más elegantes-->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<body>
+<center>
+    <h1>METODO SPLICE ARRAYS</h1>
+    <h2>ELIMNAR ELEMENTOS DE UN ARRAYS</h2>
+    <br><br>
+    <p>EL NUEVO ARRAYS ES EL SIGUIENTE:</p>
+    <br>
+    <script>
+        let num;
+        let std=new Array(); // CREA ARRAYS
+// CAPTURA ARRAYS
+        num=parseInt(prompt("INGRESE CANTIDAD DE NOMBRES STD EN ARRAYS"));
+        for (i=0;i<num;i++){
+            std[i]=prompt("INGRESE NOMBRE STD");
+        }
+// BUSCAR STD EN ARRAYS
+        let dator=prompt("INGRESE NOMBRE STD A ELIMINAR...");
+// INDICE DE ELEMENTO 
+        let find=std.indexOf(dator.trim());
+// SI EL ESTUDIANTE ES ENCONTRADO ES =0 // DE LO CONTRARIO =-1
+        if (find>-1){
+            swal("Apreciado ususario","Estudiante fue encontrado y eliminado en Arrays","success");
+            var index=std.splice(find,1);
+        } else{
+            swal("Apreciado usuario","Estudiante NO fúe encontrado en Arrays","error");
+            document.getElementById("std").innerHTML="ERROR STD NO ENCONTRADO ..."+ dator;
+        }
+        document.write(std+",");
+    </script>
+</center>
+</body>
+</html>
